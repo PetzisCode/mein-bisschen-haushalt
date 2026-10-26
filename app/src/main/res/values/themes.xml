@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/sage</item>
+        <item name="android:colorPrimaryDark">@color/beige</item>
+        <item name="android:colorAccent">@color/sage_dark</item>
+        <item name="android:colorControlActivated">@color/sage_dark</item>
+        <item name="android:textColorPrimary">@color/text</item>
+        <item name="android:windowBackground">@color/beige</item>
+        <item name="android:statusBarColor">@color/beige</item>
+        <item name="android:navigationBarColor">@color/beige</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:alertDialogTheme">@style/DialogTheme</item>
+        <item name="android:datePickerDialogTheme">@style/DialogTheme</item>
+        <item name="android:timePickerDialogTheme">@style/DialogTheme</item>
+    </style>
+
+    <style name="DialogTheme" parent="android:Theme.Material.Light.Dialog.Alert">
+        <item name="android:colorPrimary">@color/sage</item>
+        <item name="android:colorAccent">@color/sage_dark</item>
+        <item name="android:colorControlActivated">@color/sage_dark</item>
+        <item name="android:textColorPrimary">@color/text</item>
+    </style>
+</resources>

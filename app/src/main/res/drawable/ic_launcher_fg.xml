@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Haus -->
+    <path
+        android:fillColor="#FBF7EE"
+        android:pathData="M33,53 L54,35 L75,53 L75,76 Q75,78 73,78 L35,78 Q33,78 33,76 Z" />
+    <!-- Tür -->
+    <path
+        android:fillColor="#8A9A7B"
+        android:pathData="M48,78 L48,66 Q54,59 60,66 L60,78 Z" />
+    <!-- Blatt -->
+    <path
+        android:fillColor="#E2D3B3"
+        android:pathData="M60,42 C66,31 76,30 82,29 C81,38 74,46 62,44 Z" />
+</vector>

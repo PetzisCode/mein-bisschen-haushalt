@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="beige">#F5F0E6</color>
+    <color name="surface">#FFFCF6</color>
+    <color name="sage">#8A9A7B</color>
+    <color name="sage_dark">#5F7052</color>
+    <color name="text">#3E3A33</color>
+    <color name="icon_bg">#8A9A7B</color>
+</resources>

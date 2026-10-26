@@ -1,0 +1,48 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'de.meinbisschen.haushalt'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'de.meinbisschen.haushalt'
+        minSdk 26
+        targetSdk 34
+        // Jede neue Version auf GitHub bekommt automatisch eine höhere Nummer,
+        // damit Updates einfach über die alte App installiert werden können.
+        versionCode((System.getenv('GITHUB_RUN_NUMBER') ?: '1').toInteger())
+        versionName "1.0." + (System.getenv('GITHUB_RUN_NUMBER') ?: '0')
+    }
+
+    // Fester Signaturschlüssel: So bleiben deine Daten bei Updates erhalten.
+    signingConfigs {
+        haushalt {
+            storeFile file('haushalt.keystore')
+            storePassword 'haushalt-app'
+            keyAlias 'haushalt'
+            keyPassword 'haushalt-app'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.haushalt
+        }
+        debug {
+            signingConfig signingConfigs.haushalt
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    lint {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
